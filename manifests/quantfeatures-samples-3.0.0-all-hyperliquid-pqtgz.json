@@ -1,0 +1,29 @@
+{
+  "release": "quantfeatures-samples-3.0.0-all-hyperliquid-pqtgz",
+  "feature_version": "3.0.0",
+  "format": "pqt.gz",
+  "created_utc": "2026-10-28T06:57:02Z",
+  "file_label": "interval_start",
+  "first_partition_date": "2024-11-01",
+  "last_partition_date": "2026-10-01",
+  "files": 8640,
+  "files_by_module_market": {
+    "FundingRate/perp": 576,
+    "OpenIntBasic/perp": 576,
+    "OpenIntGradient/perp": 576,
+    "OpenIntPlus/perp": 576,
+    "QuoteBasic/perp": 576,
+    "TradeCovar/perp": 576,
+    "TradeCovarPlus/perp": 576,
+    "TradeFlow/perp": 576,
+    "TradeGradient/perp": 576,
+    "TradeGroup/perp": 576,
+    "TradeGroupPlus/perp": 576,
+    "TradeImpact/perp": 576,
+    "TradeLarge/perp": 576,
+    "TradeStats/perp": 576,
+    "TradeTick/perp": 576
+  },
+  "source_bytes": 181766395,
+  "member_bytes": 39210834
+}

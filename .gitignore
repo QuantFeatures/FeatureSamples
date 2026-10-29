@@ -1,0 +1,10 @@
+.env
+*.parquet
+*.dbn
+*.dbn.zst
+raw/
+secrets/
+__pycache__/
+.DS_Store
+*.pqt
+*.pqt.gz.tmp.*

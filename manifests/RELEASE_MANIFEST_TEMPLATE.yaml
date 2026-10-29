@@ -1,0 +1,27 @@
+release_id: REPLACE_ME
+status: template_only
+feature_version: 2.1.0
+feature_catalog_version: TBD
+feature_engine_version: TBD
+exchange: binance                     # binance, okx, bybit, or hyperliquid; one manifest per exchange
+quote: usdt                           # path label; Hyperliquid perpetuals settle in USDC
+markets: [spot, perp]
+instruments: []                       # e.g. [bch, bnb, btc, eth, xrp]
+modules: []                           # module names published in this release
+raw_schemas: [trades, bbo, derivative_ticker, liquidation]
+sample_rule: first_calendar_day_each_month_utc
+coverage_start_utc: TBD               # first interval start, e.g. 2019-12-01T00:00:00Z
+coverage_end_utc: TBD                 # last interval end, e.g. 2026-10-02T00:00:00Z
+output_interval: 1h
+interval_semantics: '[start,end)'
+file_label: interval_start            # 1.0.0 used interval_end
+availability_timestamp: end_time_utc
+path_template: data/features/<module>/eod/<feature_version>/<exchange>/<market>/usdt/1h/YYYY/MM/DD/<module>-<exchange>-<market>-usdt.YYYYMMDD.HHMMSS.pqt.gz
+file_format: parquet
+compression: gzip                     # .pqt.gz wrapping Parquet (inner Parquet uses zstd)
+files_per_module_market: TBD          # e.g. 1992 = 83 sample days x 24 hours
+source_gaps: []
+feature_validity_report: TBD
+public_redistribution_approved: true
+license_file: LICENSE.md
+checksums_file: TBD                   # sha256 per file

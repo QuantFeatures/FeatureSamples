@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Feature record",
+  "description": "Logical schema of one row in a sample-dataset Parquet file (feature version 2.0.0). Every module shares these interval and instrument columns; module-specific feature columns and their Parquet types are listed in the Feature Catalog module pages. Null means unavailable, never zero.",
+  "type": "object",
+  "required": [
+    "start_time_utc",
+    "end_time_utc",
+    "exch",
+    "type",
+    "base",
+    "quote"
+  ],
+  "properties": {
+    "start_time_utc": {
+      "description": "Inclusive interval start, UTC (Parquet timestamp[us, tz=UTC]). Matches the file-name label.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_time_utc": {
+      "description": "Exclusive interval end, UTC (Parquet timestamp[us, tz=UTC]). The time at which the record's information is complete.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "exch": {
+      "description": "Normalized exchange identifier.",
+      "type": "string",
+      "enum": ["binance", "okx", "bybit", "hyperliquid"]
+    },
+    "type": {
+      "description": "Normalized market type.",
+      "type": "string",
+      "enum": ["spot", "perp"]
+    },
+    "base": {
+      "description": "Base asset symbol, lower case.",
+      "type": "string"
+    },
+    "quote": {
+      "description": "Quote asset symbol, lower case.",
+      "type": "string",
+      "enum": ["usdt"]
+    }
+  },
+  "additionalProperties": {
+    "description": "Module-specific feature column; see the Feature Catalog.",
+    "type": ["number", "integer", "string", "null"]
+  }
+}

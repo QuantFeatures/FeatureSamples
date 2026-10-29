@@ -1,0 +1,31 @@
+{
+  "release": "quantfeatures-samples-3.0.0-all-bybit-pqtgz",
+  "feature_version": "3.0.0",
+  "format": "pqt.gz",
+  "created_utc": "2026-10-28T06:56:39Z",
+  "file_label": "interval_start",
+  "first_partition_date": "2020-06-01",
+  "last_partition_date": "2026-10-01",
+  "files": 31416,
+  "files_by_module_market": {
+    "FundingRate/perp": 1848,
+    "LiqFlow/perp": 1848,
+    "LiqStats/perp": 1848,
+    "OpenIntBasic/perp": 1848,
+    "OpenIntGradient/perp": 1848,
+    "OpenIntPlus/perp": 1848,
+    "QuoteBasic/perp": 1848,
+    "TradeCovar/perp": 1848,
+    "TradeCovarPlus/perp": 1848,
+    "TradeFlow/perp": 1848,
+    "TradeGradient/perp": 1848,
+    "TradeGroup/perp": 1848,
+    "TradeGroupPlus/perp": 1848,
+    "TradeImpact/perp": 1848,
+    "TradeLarge/perp": 1848,
+    "TradeStats/perp": 1848,
+    "TradeTick/perp": 1848
+  },
+  "source_bytes": 630103539,
+  "member_bytes": 124505833
+}
