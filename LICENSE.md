@@ -24,7 +24,7 @@ Unless you have a separate written agreement with QuantFeatures, you may not:
 
 ## Third-party data
 
-The Samples are derived from licensed historical exchange market data. No raw vendor or exchange data is included, and this license grants no rights to any underlying third-party data.
+The Samples are derived from historical exchange market data. No raw vendor or exchange data is included, and this license grants no rights to any underlying third-party data.
 
 ## Proprietary engine
 

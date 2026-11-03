@@ -1,6 +1,6 @@
 # QuantFeatures Sample Dataset
 
-**Research-ready, interval-based features derived from licensed historical crypto market data. These samples are hourly; full datasets are delivered at intervals from 10 minutes to 3 hours, or computed on your own licensed tick data at intervals from 30 seconds to 1 hour.**
+**Research-ready, interval-based features derived from historical crypto market data. These samples are hourly; full datasets are delivered at intervals from 10 minutes to 3 hours, or computed on your own licensed tick data at intervals from 30 seconds to 1 hour.**
 
 This repository distributes a sample of the QuantFeatures dataset: interval-based indicators and summary features computed from trade, top-of-book, funding, open-interest, and liquidation feeds on Binance, OKX, Bybit, and Hyperliquid. The feature engine itself is proprietary and is not included.
 

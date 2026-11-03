@@ -20,4 +20,4 @@ Before publication, each release is checked for complete interval coverage per m
 
 ## Source and licensing
 
-Features are derived from licensed historical exchange data for Binance, OKX, Bybit, and Hyperliquid. Raw vendor or exchange data is never published.
+Binance, OKX, and Bybit features are derived from Tardis.dev's free sample data (the first UTC day of each month). Hyperliquid features are derived from Hyperliquid's public data archive. Raw vendor or exchange data is never published.
