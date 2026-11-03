@@ -1,6 +1,6 @@
 # QuantFeatures Sample Dataset
 
-**Research-ready, interval-based features derived from licensed historical crypto market data. These samples are hourly; full datasets are available at intervals from 30 seconds to 3 hours.**
+**Research-ready, interval-based features derived from licensed historical crypto market data. These samples are hourly; full datasets are delivered at intervals from 10 minutes to 3 hours, or computed on your own licensed tick data at intervals from 30 seconds to 1 hour.**
 
 This repository distributes a sample of the QuantFeatures dataset: interval-based indicators and summary features computed from trade, top-of-book, funding, open-interest, and liquidation feeds on Binance, OKX, Bybit, and Hyperliquid. The feature engine itself is proprietary and is not included.
 
@@ -17,7 +17,7 @@ This repository distributes a sample of the QuantFeatures dataset: interval-base
 | --- | --- |
 | Sample days | First UTC day of each month within each venue's range |
 | Modules | See the [Feature Catalog](https://github.com/QuantFeatures/FeatureCatalog). `QuoteGradient` and `TradeRank` are Binance only; `LiqFlow` and `LiqStats` are not published for Hyperliquid. Funding, open-interest, and liquidation modules cover perpetuals only. |
-| Interval | 1 hour for the samples, 24 files per module, market, and sample day (full datasets: 30 seconds to 3 hours) |
+| Interval | 1 hour for the samples, 24 files per module, market, and sample day (full datasets: 10 minutes to 3 hours delivered; 30 seconds to 1 hour computed on your own licensed tick data) |
 | Feature version | `3.0.0` (files labelled by interval start; module names are the module ids, and OKX quantities are in coins) |
 | Format | Parquet, gzip-compressed as `.pqt.gz` |
 
